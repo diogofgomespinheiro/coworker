@@ -1,0 +1,32 @@
+{
+  "name": "Coworker",
+  "version": "1.0.0",
+  "description": "Web app to rent a space inside Coworking companies",
+  "main": "server.js",
+  "scripts": {
+    "commit": "git-cz"
+  },
+  "repository": "https://github.com/diogofgomespinheiro/coworker.git",
+  "author": "Diogo Pinheiro <diogo.fgomes.pinheiro@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "3.0.2",
+    "husky": "^4.0.10",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
