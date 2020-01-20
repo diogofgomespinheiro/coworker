@@ -2,7 +2,7 @@
   "name": "Coworker",
   "version": "1.0.0",
   "description": "Web app to rent a space inside Coworking companies",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "commit": "git-cz"
   },
